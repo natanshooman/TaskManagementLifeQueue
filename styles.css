@@ -136,6 +136,11 @@ header h1 {
     transform: rotate(2deg);
 }
 
+.task-item.drag-over {
+    border-top: 3px solid #667eea;
+    margin-top: 5px;
+}
+
 .drag-handle {
     font-size: 1.5rem;
     color: #adb5bd;

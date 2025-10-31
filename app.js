@@ -215,7 +215,7 @@ function handleDrop(e) {
             queue.splice(draggedIndex, 1);
             
             // Insert at new position
-            const newIndex = draggedIndex < targetIndex ? targetIndex : targetIndex;
+            const newIndex = draggedIndex < targetIndex ? targetIndex - 1 : targetIndex;
             queue.splice(newIndex, 0, draggedTask);
             
             saveTasks();
