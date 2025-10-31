@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeQueue - Productivity Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 LifeQueue</h1>
+            <p class="tagline">Keep your tasks in order, get things done</p>
+        </header>
+
+        <main>
+            <div class="queue-container">
+                <section class="queue day-queue">
+                    <div class="queue-header">
+                        <h2>📅 Day Queue</h2>
+                        <span class="task-count" id="day-count">0 tasks</span>
+                    </div>
+                    <div class="add-task-form">
+                        <input 
+                            type="text" 
+                            id="day-task-input" 
+                            placeholder="Add a task to your day..."
+                            class="task-input"
+                        >
+                        <button onclick="addTask('day')" class="add-btn">Add</button>
+                    </div>
+                    <ul id="day-queue-list" class="task-list">
+                        <!-- Tasks will be added here -->
+                    </ul>
+                </section>
+
+                <section class="queue week-queue">
+                    <div class="queue-header">
+                        <h2>📆 Week Queue</h2>
+                        <span class="task-count" id="week-count">0 tasks</span>
+                    </div>
+                    <div class="add-task-form">
+                        <input 
+                            type="text" 
+                            id="week-task-input" 
+                            placeholder="Add a task to your week..."
+                            class="task-input"
+                        >
+                        <button onclick="addTask('week')" class="add-btn">Add</button>
+                    </div>
+                    <ul id="week-queue-list" class="task-list">
+                        <!-- Tasks will be added here -->
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>Drag tasks to reorder them • New tasks are added to the end of the queue</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
